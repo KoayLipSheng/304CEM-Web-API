@@ -74,7 +74,7 @@ axios.get(querystr).then( (response) => {
     const hero2 = req.query.getName;
     const data = req.query.rating;
     
-    Record.updateOne({fullName: `${hero2}`}, {movieRating: `${data}`}, function(err, res){
+    Record.updateOne({titleName: `${hero2}`}, {movieRating: `${data}`}, function(err, res){
         
         if (err) return handleError(err);
         console.log("Update Successfully");
